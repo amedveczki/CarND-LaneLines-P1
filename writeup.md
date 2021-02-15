@@ -53,13 +53,14 @@ But both start with the same preparations:
 
 
 Now the two separate method are the following ("0", and "1"):
-0. 1. To help prevent glitches, the two set of lines are filtered so only the lines which differ only slightly from the weighted average are kept.
-   2. Per side minimum and maximum X/Y values of lines are computed (min/max X is swapped between sides as it is supposed to detect the endpoints at the bottom of the picture, and for the right lane "min x" is the top, therefore it should be switched)
-   3. Left/right lines are extrapolated to be drawn from the bottom to the near center
+1. Mode "0" (used in images, videos):
+    1. To help prevent glitches, the two set of lines are filtered so only the lines which differ only slightly from the weighted average are kept.
+    2. Per side minimum and maximum X/Y values of lines are computed (min/max X is swapped between sides as it is supposed to detect the endpoints at the bottom of the picture, and for the right lane "min x" is the top, therefore it should be switched)
+    3. Left/right lines are extrapolated to be drawn from the bottom to the near center
    
-   
-1. 1. "Center" point of the camera on the horizon was manually determined (where based on the sample images most of the left/right lanes intersect if they were longer)
-   2. Using the average angles from the previous preparation two lines were drawn from the centerpoint downwards.
+2. Mode "1": 
+    1. "Center" point of the camera on the horizon was manually determined (where based on the sample images most of the left/right lanes intersect if they were longer)
+    2. Using the average angles from the previous preparation two lines were drawn from the centerpoint downwards.
 
 
 
